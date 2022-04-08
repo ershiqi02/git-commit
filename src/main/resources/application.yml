@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: root
+    password: zhengjialei
+    url: jdbc:mysql://124.221.103.52:3333/security?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    port: 6380
+    password: zhengjialei0111;aa
+    host: 124.221.103.52
+server:
+  port: 8088
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.demo.security.entity
+  global-config:
+    db-config:
+      logic-not-delete-value: 1
+      logic-delete-value: 0
